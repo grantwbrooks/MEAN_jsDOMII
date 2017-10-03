@@ -32,39 +32,26 @@
 			// inner loop
 			for(let j = 0; j<13; j++){
 				// calculate our number
+                let nums;
                 if(i == 0){
                     if(j===0){
-                        let nums = "X";
-                    	// attach our table data tags around the number
-                        let data = "<td>" + nums + "</td>";
-                        // add it to the html
-                        html_string += data;
+                        nums = "X";
                     }
                     else{
-                        let nums = j;
-                    	// attach our table data tags around the number
-                        let data = "<td>" + nums + "</td>";
-                        // add it to the html
-                        html_string += data;
+                        nums = j;
                     }
-
                 }
                 else{
                     if(j==0){
-                        let nums = i;
-                    	// attach our table data tags around the number
-                        let data = "<td>" + nums + "</td>";
-                        // add it to the html
-                        html_string += data;
+                        nums = i;
                     }
                     else{
-                        let nums = i * j;
-                    				// attach our table data tags around the number
-                        let data = "<td>" + nums + "</td>";
-                        // add it to the html
-                        html_string += data;
+                        nums = i * j;
                     }
                 }
+                let data = "<td>" + nums + "</td>";
+                        // add it to the html
+                html_string += data;
 				
 				// // attach our table data tags around the number
 				// let data = "<td>" + nums + "</td>";
